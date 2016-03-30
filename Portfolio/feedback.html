@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mauro's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link	rel="stylesheet"	href="themes/MyTheme.css"/>
+<link	rel="stylesheet"	href="themes/jquery.mobile.icons.min.css"/>
+<link	rel="stylesheet"	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-
+1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-
+1.4.5.min.js"></script>
+        <script src="js/localstorage.js"></script>
+
+    <style>
+        img.fullscreen {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div data-role="page" id="feedback">
+
+        <!-- Header -->
+
+        <header data-role="header">
+            <h1>Mauro's portfolio</h1>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-icon="home">Home</a></li>
+                        <li><a href="about.html" data-icon="info">About</a></li>
+                        <li><a href="contact.html" data-icon="action">Contact</a></li>
+                        <li><a href="feedback.html" data-icon="star">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Emtpy textfield where you can type your feedback -->
+        <div data-role="content">
+            <input type="text" name="item" placeholder="Type your feedback.." onchange="add();">
+
+            <h3> Feedback: </h3>
+            <p>
+                <br>
+            </p>
+
+            <!-- List of items in local storage -->
+
+            <ul id="items" data‐role="listview" data-theme="a" data‐inset="true" ></ul>
+            <p>
+                <br>
+            </p>
+            <button onclick="deleteAll()" data-icon="delete">Delete all</button>
+        </div>
+
+
+        <footer data-role="footer" data-position="fixed">
+            <h4 class="ui-title" role="heading" aria-level="1"> © </h4>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
